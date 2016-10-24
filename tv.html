@@ -1,0 +1,573 @@
+<html>
+  <head>
+	<title>Replay</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  </head>
+  <body>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<!-- <script type="text/javascript" src="js/nav.js"></script> -->
+	<script>
+		$( document ).ready( function() {
+			$(".button-collapse").sideNav();
+		});
+	</script>
+
+	<nav class="red">
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo">TV Shows</a>
+			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="new_tv.html">New TV Shows</a></li>
+				<li><a href="new_movies.html">New Movies</a></li>
+				<li class="active"><a href="tv.html">TV Shows</a></li>
+				<li><a href="movies.html">Movies</a></li>
+				<li><a href="random_video.html">Random funny video</a></li>
+				<li><a href="dc animated in order/">DC animated movies in order</a></li>
+			</ul>
+			<ul id="slide-out" class="side-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="new_tv.html">New TV Shows</a></li>
+				<li><a href="new_movies.html">New Movies</a></li>
+				<li class="active"><a href="tv.html">TV Shows</a></li>
+				<li><a href="movies.html">Movies</a></li>
+				<li><a href="random_video.html">Random funny video</a></li>
+				<li><a href="dc animated in order/">DC animated movies in order</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<main>
+	<div class="container">
+			<ul class="collapsible popout" data-collapsible="accordion">
+				<!--American dragon-->
+				<li>
+					<div class="collapsible-header"><i class="material-icons"></i>American dragon
+					<a  class="secondary-content">
+					<i type="button" NAME="myButton" onClick="randomdragon()" class="material-icons">shuffle</i></a></div>
+					<!--season 1-->
+					<div class="collapsible-body grey lighten-4"><p>Season 01<a href="movies and tv/tv/American Dragon/season 1/" class="secondary-content">
+					<i class="material-icons">send</i></a></p></div>
+					<!--season 2-->
+					<div class="collapsible-body grey lighten-4"><p>Season 02<a href="movies and tv/tv/American Dragon/season 2/" class="secondary-content">
+					<i class="material-icons">send</i></a></p></div>
+				</li>
+				<!--Ben 10-->
+				<li>
+					<div class="collapsible-header"><i class="material-icons"></i>Ben 10
+					<a  class="secondary-content">
+					<i type="button" NAME="myButton" onClick="randomben10()" class="material-icons">shuffle</i></a></div>
+					<!--season 1-->
+					<div class="collapsible-body grey lighten-4"><p>Season 01<a href="movies and tv/tv/ben 10/season 1/" class="secondary-content">
+					<i class="material-icons">send</i></a></p></div>
+					<!--season 2-->
+					<div class="collapsible-body grey lighten-4"><p>Season 02<a href="movies and tv/tv/ben 10/season 2/" class="secondary-content">
+					<i class="material-icons">send</i></a></p></div>
+					<!--season 3-->
+					<div class="collapsible-body grey lighten-4"><p>Season 03<a href="movies and tv/tv/ben 10/season 3/" class="secondary-content">
+					<i class="material-icons">send</i></a></p></div>
+					<!--season 4-->
+					<div class="collapsible-body grey lighten-4"><p>Season 04<a href="movies and tv/tv/ben 10/season 4/" class="secondary-content">
+					<i class="material-icons">send</i></a></p></div>					
+				</li>
+				<!--Ben 10 Alien force-->
+				<li>
+					<div class="collapsible-header"><i class="material-icons"></i>Ben 10 Alien Force
+					<a  class="secondary-content">
+					<i type="button" NAME="myButton" onClick="randomben10(" class="material-icons">shuffle</i></a></div>
+					<!--season 1-->
+					<div class="collapsible-body grey lighten-4"><p>Season 01<a href="movies and tv/tv/ben 10 Alien Force/season 1/" class="secondary-content">
+					<i class="material-icons">send</i></a></p></div>
+					<!--season 2-->
+					<div class="collapsible-body grey lighten-4"><p>Season 02<a href="movies and tv/tv/ben 10 Alien Force/season 2/" class="secondary-content">
+					<i class="material-icons">send</i></a></p></div>
+					<!--season 3-->
+					<div class="collapsible-body grey lighten-4"><p>Season 03<a href="movies and tv/tv/ben 10 Alien Force/season 3/" class="secondary-content">
+					<i class="material-icons">send</i></a></p></div>					
+				</li>
+			</ul>
+		</div>
+
+
+
+
+		<div class="container">
+			<ul class="collection">
+
+				<li class="collection-item">
+				<div>Ben 10 omniverse
+					<a href="movies and tv/tv/ben 10 omniverse/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Ben 10 Ultimate Alien
+					<a href="movies and tv/tv/ben 10 Ultimate Alien/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Danny Phantom
+					<a href="movies and tv/tv/Danny Phantom/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Disney's The Replacements
+					<a href="movies and tv/tv/Disney's The Replacements/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Drake and Josh
+					<a href="movies and tv/tv/drake and josh/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Fairly odd parents
+					<a href="movies and tv/tv/Fairly odd parents/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Foster's Home for Imaginary friends
+					<a href="movies and tv/tv/Foster's Home for Imaginary friends/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Friends
+					<a href="movies and tv/tv/friends/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Futurama
+					<a href="movies and tv/tv/futurama/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Ghost Stories
+					<a href="movies and tv/tv/ghost stories/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Gravity Falls
+					<a href="movies and tv/tv/Gravity Falls/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Highschool Of The Dead
+					<a href="movies and tv/tv/highschool of the dead/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>How I Met Your Mother
+					<a href="movies and tv/tv/how i met your mother/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Kenan And Kel
+					<a href="movies and tv/tv/Kenan And Kel/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Xiaolin Showdown
+					<a href="movies and tv/tv/xiaolin showdown/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Kim Possible
+					<a href="movies and tv/tv/kim possible/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Codename: Kids Next Door
+					<a href="movies and tv/tv/knd/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Ozzy and Drix
+					<a href="movies and tv/tv/ozzy and drix/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Prison Break
+					<a href="movies and tv/tv/Prison Break/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>The Suite Life Of Zack and Cody
+					<a href="movies and tv/tv/the suite life of zack and cody/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Recess + (Recess: Schools out)
+					<a href="movies and tv/tv/recess/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>The Fresh Prince of Bel-Air
+					<a href="movies and tv/tv/The Fresh Prince of Bel-Air/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>That's So Raven (Only Seasons 1-3)
+					<a href="movies and tv/tv/that's so raven/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>The Suite Life on Deck
+					<a href="movies and tv/tv/The Suite Life on Deck/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Mind Your Language
+					<a href="movies and tv/tv/Mind Your Language/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+
+				<li class="collection-item">
+				<div>Wizards of Waverly Place
+					<a href="movies and tv/tv/Wizards of Waverly Place/" class="secondary-content">
+					<i class="material-icons">send</i></a>
+				</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Script for American Dragon -->
+		<script>
+			function go_to(url) {
+			window.location=url;
+			}
+			function randomdragon() {
+			var adrag;
+			adrag = 1+Math.round(Math.random()*52);   // a = random number between 1-3american dragon
+			//season1
+			if (adrag==1) go_to("movies and tv/tv/American Dragon/Season 1/1x01 - Old School Training.mp4");
+			if (adrag==2) go_to("movies and tv/tv/American Dragon/Season 1/1x02 - Dragon Breath.mp4");
+			if (adrag==3) go_to("movies and tv/tv/American Dragon/Season 1/1x03 - The Talented Mr. Long .mp4");
+			if (adrag==4) go_to("movies and tv/tv/American Dragon/Season 1/1x04 - The Legend of Dragon Tooth.mp4");
+			if (adrag==5) go_to("movies and tv/tv/American Dragon/Season 1/1x05 - Act 4, Scene 15.mp4");
+			if (adrag==6) go_to("movies and tv/tv/American Dragon/Season 1/1x06 - Adventures in Trollsitting; Fu Dog Takes a Walk.mp4");
+			if (adrag==7) go_to("movies and tv/tv/American Dragon/Season 1/1x07 - Professor Rotwood's Thesis.mp4");
+			if (adrag==8) go_to("movies and tv/tv/American Dragon/Season 1/1x08 - The Egg; The Heist.mp4");
+			if (adrag==9) go_to("movies and tv/tv/American Dragon/Season 1/1x09 - Dragon Summit .mp4");
+			if (adrag==10) go_to("movies and tv/tv/American Dragon/Season 1/1x10 - Body Guard Duty.mp4");
+			if (adrag==11) go_to("movies and tv/tv/American Dragon/Season 1/1x11 - Shapeshifter.mp4");
+			if (adrag==12) go_to("movies and tv/tv/American Dragon/Season 1/1x12 - The Ski Trip.mp4");
+			if (adrag==13) go_to("movies and tv/tv/American Dragon/Season 1/1x13 - The Long Weekend.mp4");
+			if (adrag==14) go_to("movies and tv/tv/American Dragon/Season 1/1x14 - Eye of the Beholder.mp4");
+			if (adrag==15) go_to("movies and tv/tv/American Dragon/Season 1/1x15 - Jake Takes the Cake.mp4");
+			if (adrag==16) go_to("movies and tv/tv/American Dragon/Season 1/1x16 - Hong Kong Knights.mp4");
+			if (adrag==17) go_to("movies and tv/tv/American Dragon/Season 1/1x17 - Halloween Bash.mp4");
+			if (adrag==18) go_to("movies and tv/tv/American Dragon/Season 1/1x18 - Fu and Tell; Flight of the Unicorn.mp4");
+			if (adrag==19) go_to("movies and tv/tv/American Dragon/Season 1/1x19 - Keeping Shop.mp4");
+			if (adrag==20) go_to("movies and tv/tv/American Dragon/Season 1/1x20 - Ring Around the Dragon.mp4");
+			if (adrag==21) go_to("movies and tv/tv/American Dragon/Season 1/1x21 - The Hunted.mp4");
+			//season2
+			if (adrag==22) go_to("movies and tv/tv/American Dragon/Season 2/2x01 - Half-Baked.mp4");
+			if (adrag==23) go_to("movies and tv/tv/American Dragon/Season 2/2x02 - Hero Of The Hourglass.mp4");
+			if (adrag==24) go_to("movies and tv/tv/American Dragon/Season 2/2x03 - Bring It On.mp4");
+			if (adrag==25) go_to("movies and tv/tv/American Dragon/Season 2/2x04 - The Academy.mp4");
+			if (adrag==26) go_to("movies and tv/tv/American Dragon/Season 2/2x05 - Family Business.mp4");
+			if (adrag==27) go_to("movies and tv/tv/American Dragon/Season 2/2x06 - Something Fishy This Way Comes.mp4");
+			if (adrag==28) go_to("movies and tv/tv/American Dragon/Season 2/2x07 - Hairy Christmas.mp4");
+			if (adrag==29) go_to("movies and tv/tv/American Dragon/Season 2/2x08 - Breakout.mp4");
+			if (adrag==30) go_to("movies and tv/tv/American Dragon/Season 2/2x09 - The Doppelganger Gang.mp4");
+			if (adrag==31) go_to("movies and tv/tv/American Dragon/Season 2/2x10 - Dreamscape.mp4");
+			if (adrag==32) go_to("movies and tv/tv/American Dragon/Season 2/2x11 - Fool's Gold.mp4");
+			if (adrag==33) go_to("movies and tv/tv/American Dragon/Season 2/2x12 - The Love Cruise.mp4");
+			if (adrag==34) go_to("movies and tv/tv/American Dragon/Season 2/2x13 - Feeding Frenzy.mp4");
+			if (adrag==35) go_to("movies and tv/tv/American Dragon/Season 2/2x14 - A Befuddled Mind.mp4");
+			if (adrag==36) go_to("movies and tv/tv/American Dragon/Season 2/2x15 - The Rotwood Files.mp4");
+			if (adrag==37) go_to("movies and tv/tv/American Dragon/Season 2/2x16 - Haley Gone Wild.mp4");
+			if (adrag==38) go_to("movies and tv/tv/American Dragon/Season 2/2x17 - Switcheroo.mp4");
+			if (adrag==39) go_to("movies and tv/tv/American Dragon/Season 2/2x18 - Homecoming.mp4");
+			if (adrag==40) go_to("movies and tv/tv/American Dragon/Season 2/2x19 - A Ghost Story.mp4");
+			if (adrag==41) go_to("movies and tv/tv/American Dragon/Season 2/2x20 - Young At Heart.mp4");
+			if (adrag==42) go_to("movies and tv/tv/American Dragon/Season 2/2x21 - Supernatural Tuesday.mp4");
+			if (adrag==43) go_to("movies and tv/tv/American Dragon/Season 2/2x22 - Siren Says.mp4");
+			if (adrag==44) go_to("movies and tv/tv/American Dragon/Season 2/2x23 - Shaggy Frog.mp4");
+			if (adrag==45) go_to("movies and tv/tv/American Dragon/Season 2/2x24 - Year of the Jake.mp4");
+			if (adrag==46) go_to("movies and tv/tv/American Dragon/Season 2/2x25 - Nobody's Fu.mp4");
+			if (adrag==47) go_to("movies and tv/tv/American Dragon/Season 2/2x26 - game on.mp4");
+			if (adrag==48) go_to("movies and tv/tv/American Dragon/Season 2/2x27 - bite father bite son.mp4");
+			if (adrag==49) go_to("movies and tv/tv/American Dragon/Season 2/2x28 - magic enemy #1.mp4");
+			if (adrag==50) go_to("movies and tv/tv/American Dragon/Season 2/2x29 - furious jealousy.mp4");
+			if (adrag==51) go_to("movies and tv/tv/American Dragon/Season 2/2x30 - Being Human.mp4");
+			if (adrag==52) go_to("movies and tv/tv/American Dragon/Season 2/2x31 - The Hong Kong Longs.mp4");
+			}
+		</script>
+		<!-- End of script for American Dragon -->
+
+		<!-- Script for Ben 10 -->
+		<script>
+			function go_to(url) {
+			window.location=url;
+			}
+			function randomben10() {
+			var b10;
+			b10 = 1+Math.round(Math.random()*52);   // a = random number between 1-3 ben10
+			//season1
+			if (b10==1) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 01.mp4");
+			if (b10==2) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 02.mp4");
+			if (b10==3) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 03.mp4");
+			if (b10==4) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 04.mp4");
+			if (b10==5) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 05.mp4");
+			if (b10==6) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 06.mp4");
+			if (b10==7) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 07.mp4");
+			if (b10==8) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 08.mp4");
+			if (b10==9) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 09.mp4");
+			if (b10==10) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 10.mp4");
+			if (b10==11) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 11.mp4");
+			if (b10==12) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 12.mp4");
+			if (b10==13) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 13.mp4");
+			//season2
+			if (b10==14) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 01.mp4");
+			if (b10==15) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 02.mp4");
+			if (b10==16) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 03.mp4");
+			if (b10==17) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 04.mp4");
+			if (b10==18) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 05.mp4");
+			if (b10==19) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 06.mp4");
+			if (b10==20) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 07.mp4");
+			if (b10==21) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 08.mp4");
+			if (b10==22) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 09.mp4");
+			if (b10==23) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 10.mp4");
+			if (b10==24) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 11.mp4");
+			if (b10==25) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 12.mp4");
+			if (b10==26) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 13.mp4");
+			//season3
+			if (b10==27) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 01.mp4");
+			if (b10==28) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 02.mp4");
+			if (b10==29) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 03.mp4");
+			if (b10==30) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 04.mp4");
+			if (b10==31) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 05.mp4");
+			if (b10==32) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 06.mp4");
+			if (b10==33) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 07.mp4");
+			if (b10==34) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 08.mp4");
+			if (b10==35) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 09.mp4");
+			if (b10==36) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 10.mp4");
+			if (b10==37) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 11.mp4");
+			if (b10==38) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 12.mp4");
+			if (b10==39) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 13.mp4");
+			//season4
+			if (b10==40) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 01.mp4");
+			if (b10==41) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 02.mp4");
+			if (b10==42) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 03.mp4");
+			if (b10==43) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 04.mp4");
+			if (b10==44) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 05.mp4");
+			if (b10==45) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 06.mp4");
+			if (b10==46) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 07.mp4");
+			if (b10==47) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 08.mp4");
+			if (b10==48) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 09.mp4");
+			if (b10==49) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 10.mp4");
+			if (b10==50) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 11.mp4");
+			if (b10==51) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 12.mp4");
+			if (b10==52) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 13.mp4");
+			}
+		</script>
+		<!-- End of script for Ben 10  -->
+	</main>
+
+	<footer class="page-footer red">
+		<div class="footer-copyright">
+			<div class="container center">
+				Aqib's Media Server
+			</div>
+		</div>
+	</footer>
+
+
+  </body>
+</html>
+
+<!-- Script for American Dragon -->
+<script>
+	function go_to(url) {
+	window.location=url;
+	}
+	function randomdragon() {
+	var adrag;
+	adrag = 1+Math.round(Math.random()*52);   // a = random number between 1-3american dragon
+	//season1
+	if (adrag==1) go_to("movies and tv/tv/American Dragon/Season 1/1x01 - Old School Training.mp4");
+	if (adrag==2) go_to("movies and tv/tv/American Dragon/Season 1/1x02 - Dragon Breath.mp4");
+	if (adrag==3) go_to("movies and tv/tv/American Dragon/Season 1/1x03 - The Talented Mr. Long .mp4");
+	if (adrag==4) go_to("movies and tv/tv/American Dragon/Season 1/1x04 - The Legend of Dragon Tooth.mp4");
+	if (adrag==5) go_to("movies and tv/tv/American Dragon/Season 1/1x05 - Act 4, Scene 15.mp4");
+	if (adrag==6) go_to("movies and tv/tv/American Dragon/Season 1/1x06 - Adventures in Trollsitting; Fu Dog Takes a Walk.mp4");
+	if (adrag==7) go_to("movies and tv/tv/American Dragon/Season 1/1x07 - Professor Rotwood's Thesis.mp4");
+	if (adrag==8) go_to("movies and tv/tv/American Dragon/Season 1/1x08 - The Egg; The Heist.mp4");
+	if (adrag==9) go_to("movies and tv/tv/American Dragon/Season 1/1x09 - Dragon Summit .mp4");
+	if (adrag==10) go_to("movies and tv/tv/American Dragon/Season 1/1x10 - Body Guard Duty.mp4");
+	if (adrag==11) go_to("movies and tv/tv/American Dragon/Season 1/1x11 - Shapeshifter.mp4");
+	if (adrag==12) go_to("movies and tv/tv/American Dragon/Season 1/1x12 - The Ski Trip.mp4");
+	if (adrag==13) go_to("movies and tv/tv/American Dragon/Season 1/1x13 - The Long Weekend.mp4");
+	if (adrag==14) go_to("movies and tv/tv/American Dragon/Season 1/1x14 - Eye of the Beholder.mp4");
+	if (adrag==15) go_to("movies and tv/tv/American Dragon/Season 1/1x15 - Jake Takes the Cake.mp4");
+	if (adrag==16) go_to("movies and tv/tv/American Dragon/Season 1/1x16 - Hong Kong Knights.mp4");
+	if (adrag==17) go_to("movies and tv/tv/American Dragon/Season 1/1x17 - Halloween Bash.mp4");
+	if (adrag==18) go_to("movies and tv/tv/American Dragon/Season 1/1x18 - Fu and Tell; Flight of the Unicorn.mp4");
+	if (adrag==19) go_to("movies and tv/tv/American Dragon/Season 1/1x19 - Keeping Shop.mp4");
+	if (adrag==20) go_to("movies and tv/tv/American Dragon/Season 1/1x20 - Ring Around the Dragon.mp4");
+	if (adrag==21) go_to("movies and tv/tv/American Dragon/Season 1/1x21 - The Hunted.mp4");
+	//season2
+	if (adrag==22) go_to("movies and tv/tv/American Dragon/Season 2/2x01 - Half-Baked.mp4");
+	if (adrag==23) go_to("movies and tv/tv/American Dragon/Season 2/2x02 - Hero Of The Hourglass.mp4");
+	if (adrag==24) go_to("movies and tv/tv/American Dragon/Season 2/2x03 - Bring It On.mp4");
+	if (adrag==25) go_to("movies and tv/tv/American Dragon/Season 2/2x04 - The Academy.mp4");
+	if (adrag==26) go_to("movies and tv/tv/American Dragon/Season 2/2x05 - Family Business.mp4");
+	if (adrag==27) go_to("movies and tv/tv/American Dragon/Season 2/2x06 - Something Fishy This Way Comes.mp4");
+	if (adrag==28) go_to("movies and tv/tv/American Dragon/Season 2/2x07 - Hairy Christmas.mp4");
+	if (adrag==29) go_to("movies and tv/tv/American Dragon/Season 2/2x08 - Breakout.mp4");
+	if (adrag==30) go_to("movies and tv/tv/American Dragon/Season 2/2x09 - The Doppelganger Gang.mp4");
+	if (adrag==31) go_to("movies and tv/tv/American Dragon/Season 2/2x10 - Dreamscape.mp4");
+	if (adrag==32) go_to("movies and tv/tv/American Dragon/Season 2/2x11 - Fool's Gold.mp4");
+	if (adrag==33) go_to("movies and tv/tv/American Dragon/Season 2/2x12 - The Love Cruise.mp4");
+	if (adrag==34) go_to("movies and tv/tv/American Dragon/Season 2/2x13 - Feeding Frenzy.mp4");
+	if (adrag==35) go_to("movies and tv/tv/American Dragon/Season 2/2x14 - A Befuddled Mind.mp4");
+	if (adrag==36) go_to("movies and tv/tv/American Dragon/Season 2/2x15 - The Rotwood Files.mp4");
+	if (adrag==37) go_to("movies and tv/tv/American Dragon/Season 2/2x16 - Haley Gone Wild.mp4");
+	if (adrag==38) go_to("movies and tv/tv/American Dragon/Season 2/2x17 - Switcheroo.mp4");
+	if (adrag==39) go_to("movies and tv/tv/American Dragon/Season 2/2x18 - Homecoming.mp4");
+	if (adrag==40) go_to("movies and tv/tv/American Dragon/Season 2/2x19 - A Ghost Story.mp4");
+	if (adrag==41) go_to("movies and tv/tv/American Dragon/Season 2/2x20 - Young At Heart.mp4");
+	if (adrag==42) go_to("movies and tv/tv/American Dragon/Season 2/2x21 - Supernatural Tuesday.mp4");
+	if (adrag==43) go_to("movies and tv/tv/American Dragon/Season 2/2x22 - Siren Says.mp4");
+	if (adrag==44) go_to("movies and tv/tv/American Dragon/Season 2/2x23 - Shaggy Frog.mp4");
+	if (adrag==45) go_to("movies and tv/tv/American Dragon/Season 2/2x24 - Year of the Jake.mp4");
+	if (adrag==46) go_to("movies and tv/tv/American Dragon/Season 2/2x25 - Nobody's Fu.mp4");
+	if (adrag==47) go_to("movies and tv/tv/American Dragon/Season 2/2x26 - game on.mp4");
+	if (adrag==48) go_to("movies and tv/tv/American Dragon/Season 2/2x27 - bite father bite son.mp4");
+	if (adrag==49) go_to("movies and tv/tv/American Dragon/Season 2/2x28 - magic enemy #1.mp4");
+	if (adrag==50) go_to("movies and tv/tv/American Dragon/Season 2/2x29 - furious jealousy.mp4");
+	if (adrag==51) go_to("movies and tv/tv/American Dragon/Season 2/2x30 - Being Human.mp4");
+	if (adrag==52) go_to("movies and tv/tv/American Dragon/Season 2/2x31 - The Hong Kong Longs.mp4");
+	}
+</script>
+<!-- End of script for American Dragon -->
+
+<!-- Script for Ben 10 -->
+<script>
+	function go_to(url) {
+	window.location=url;
+	}
+	function randomben10() {
+	var b10;
+	b10 = 1+Math.round(Math.random()*52);   // a = random number between 1-3 ben10
+	//season1
+	if (b10==1) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 01.mp4");
+	if (b10==2) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 02.mp4");
+	if (b10==3) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 03.mp4");
+	if (b10==4) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 04.mp4");
+	if (b10==5) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 05.mp4");
+	if (b10==6) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 06.mp4");
+	if (b10==7) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 07.mp4");
+	if (b10==8) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 08.mp4");
+	if (b10==9) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 09.mp4");
+	if (b10==10) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 10.mp4");
+	if (b10==11) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 11.mp4");
+	if (b10==12) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 12.mp4");
+	if (b10==13) go_to("movies and tv/tv/ben 10/season 1/ben 10 ep 13.mp4");
+	//season2
+	if (b10==14) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 01.mp4");
+	if (b10==15) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 02.mp4");
+	if (b10==16) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 03.mp4");
+	if (b10==17) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 04.mp4");
+	if (b10==18) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 05.mp4");
+	if (b10==19) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 06.mp4");
+	if (b10==20) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 07.mp4");
+	if (b10==21) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 08.mp4");
+	if (b10==22) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 09.mp4");
+	if (b10==23) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 10.mp4");
+	if (b10==24) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 11.mp4");
+	if (b10==25) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 12.mp4");
+	if (b10==26) go_to("movies and tv/tv/ben 10/season 2/ben 10 ep 13.mp4");
+	//season3
+	if (b10==27) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 01.mp4");
+	if (b10==28) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 02.mp4");
+	if (b10==29) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 03.mp4");
+	if (b10==30) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 04.mp4");
+	if (b10==31) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 05.mp4");
+	if (b10==32) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 06.mp4");
+	if (b10==33) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 07.mp4");
+	if (b10==34) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 08.mp4");
+	if (b10==35) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 09.mp4");
+	if (b10==36) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 10.mp4");
+	if (b10==37) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 11.mp4");
+	if (b10==38) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 12.mp4");
+	if (b10==39) go_to("movies and tv/tv/ben 10/season 3/ben 10 ep 13.mp4");
+	//season4
+	if (b10==40) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 01.mp4");
+	if (b10==41) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 02.mp4");
+	if (b10==42) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 03.mp4");
+	if (b10==43) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 04.mp4");
+	if (b10==44) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 05.mp4");
+	if (b10==45) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 06.mp4");
+	if (b10==46) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 07.mp4");
+	if (b10==47) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 08.mp4");
+	if (b10==48) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 09.mp4");
+	if (b10==49) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 10.mp4");
+	if (b10==50) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 11.mp4");
+	if (b10==51) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 12.mp4");
+	if (b10==52) go_to("movies and tv/tv/ben 10/season 4/ben 10 ep 13.mp4");
+	}
+</script>
+<!-- End of script for Ben 10  -->

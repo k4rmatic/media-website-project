@@ -1,0 +1,83 @@
+<html>
+  <head>
+	<title>Replay</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/random_video.css">
+
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!--Videojs Player -->
+	<link href="video.js\video-js.css" rel="stylesheet">
+	<link href="video.js\videojs-playlist-ui.vertical.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<!-- <script type="text/javascript" src="js/nav.js"></script> -->
+	<script>
+		$( document ).ready( function() {
+			$(".button-collapse").sideNav();
+		});
+	</script>
+
+	<nav class="red">
+		<div class="nav-wrapper">
+			<a href="index.php" class="brand-logo">Replay</a>
+			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="new_tv.html">New TV Shows</a></li>
+				<li><a href="new_movies.html">New Movies</a></li>
+				<li><a href="tv.html">TV Shows</a></li>
+				<li><a href="movies.html">Movies</a></li>
+				<li class="active"><a href="random_video.html">Random funny video</a></li>
+				<li><a href="dc animated in order/">DC animated movies in order</a></li>
+			</ul>
+			<ul id="slide-out" class="side-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="new_tv.html">New TV Shows</a></li>
+				<li><a href="new_movies.html">New Movies</a></li>
+				<li><a href="tv.html">TV Shows</a></li>
+				<li><a href="movies.html">Movies</a></li>
+				<li class="active"><a href="random_video.html">Random funny video</a></li>
+				<li><a href="dc animated in order/">DC animated movies in order</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<main>
+		<div class="container">
+			<video id="video" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls>
+				<p>
+					Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
+				</p>
+				<source src="connor.mp4" type="video/mp4">
+			</video>
+			<a class="btn" style="width: 100%;" onclick="Materialize.toast('HAHA its not actually random!', 2000)">Randomise</a>
+		</div>
+	</main>
+
+	<footer class="page-footer red">
+		<div class="footer-copyright">
+			<div class="container center">
+				Aqib's Media Server
+			</div>
+		</div>
+	</footer>
+
+	<!-- VideoJS Player -->
+	<script src="video.js\video.js"></script>
+	<script src="video.js\global.js"></script>
+  </body>
+</html>

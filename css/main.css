@@ -1,0 +1,32 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+    background-image: url('../images/websitebg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+a{
+	color:red;
+}
+
+.right 
+{
+	float: left;
+}
+
+.video-js {
+	float: left;
+	width: 61%;
+	height: 45vh;
+}
+/* Position our playlist on the example page */
+.vjs-playlist {
+	width: 39%;
+	height: 45vh;
+}
