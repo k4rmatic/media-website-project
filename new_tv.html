@@ -1,143 +1,122 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Replay</title>
 		<link rel="icon" type="image/png" href="images/favicon.png">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-
-		<!--Import Google Icon Font-->
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<!--Import materialize.css-->
+		<!--Import Materialize CSS-->
+		<link href="css/material-icons.css" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+		
 		<!--Videojs Player -->
 		<link href="video.js\video-js.css" rel="stylesheet">
 		<link href="video.js\videojs-playlist-ui.vertical.css" rel="stylesheet">
-
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css">		
+		
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<!-- VideoJS Player -->
+		<script src="video.js\video.js"></script>
+		<script src="video.js\videojs-playlist.js"></script>
+		<script src="video.js\videojs-playlist-ui.js"></script>
+	</head>
+	<body>
 		<script>
-		function run_play() {
-			//Loads the video into the player ready to play
-			player.playlist.first();
-			player.playlist.autoadvance(0);
-			Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
-		}
-		</script>
-
-		<!-- Simpsons -->
-		<script>
-			//Simpsons season 1
-			function simpsons_s1() {
-			var player = videojs('video');
-		    player.playlist([
-
-		   		{
-		      	name: 'Disney\'s Oceans',
-		      	sources: [{ src: 'http://vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' }]
-				},
-
-
-		    	{
-		      	name: 'Sintel',
-		      	sources: [{ src: 'http://media.w3.org/2010/05/sintel/trailer.mp4', type: 'video/mp4' }]
-		    	}
-
-		    ]);
-
-		    
-
-
-				run_play();
-				return;
+			function download(link) {
 			}
 		</script>
 
+		<!-- American Dad -->
+		<script>
+			//American Dad Season 1
+			function AmericanDad_s1() {
+				var player = videojs('video');
+			    player.playlist([
+			   		{
+			      	name: 'Episode 1',
+			      	sources: [{ src: 'http://81.111.188.191/media/movies/2012.mp4', type: 'video/mp4' }]
+					},
+			    	{
+			      	name: 'Episode 2',
+			      	sources: [{ src: 'http://media.w3.org/2010/05/sintel/trailer.mp4', type: 'video/mp4' }]
+			    	}
+			    ]);
 
-	</head>
-	<body>
+				//Loads the video into the player ready to play
+				player.playlist.first();
+				player.playlist.autoadvance(0);
+				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
+				return;
+			}
+		</script>
+		<script>
+			$( document ).ready( function() {
+				$(".button-collapse").sideNav();
 
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-			<script type="text/javascript" src="js/materialize.min.js"></script>
-			<script>
-				$( document ).ready( function() {
-					$(".button-collapse").sideNav();
+				// fire up the videojs plugin
+			    var player = videojs('video');
+			    player.playlist([{
+			     name: 'Please pick a series below',
+			    }], 1);
+			    player.playlist.autoadvance(1);
+			    player.playlistUi();
 				});
-			</script>
+		</script>
 			
 			
-			<nav class="red">
-				<div class="nav-wrapper">
-					<a href="index.html" class="brand-logo">New TV Shows</a>
-					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="new_tv.html">New TV Shows</a></li>
-						<li><a href="new_movies.html">New Movies</a></li>
-						<li><a href="tv.html">TV Shows</a></li>
-						<li><a href="movies.html">Movies</a></li>
-						<li><a href="random_video.html">Random funny video</a></li>
-						<li><a href="dc animated in order/">DC animated movies in order</a></li>
-					</ul>
-					<ul id="slide-out" class="side-nav">
-						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="new_tv.html">New TV Shows</a></li>
-						<li><a href="new_movies.html">New Movies</a></li>
-						<li><a href="tv.html">TV Shows</a></li>
-						<li><a href="movies.html">Movies</a></li>
-						<li><a href="random_video.html">Random funny video</a></li>
-						<li><a href="dc animated in order/">DC animated movies in order</a></li>
-					</ul>
-				</div>
-			</nav>
+		<nav class="red">
+			<div class="nav-wrapper">
+				<a href="index.html" class="brand-logo">New TV Shows</a>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="new_tv.html">New TV Shows</a></li>
+					<li><a href="new_movies.html">New Movies</a></li>
+					<li><a href="tv.html">TV Shows</a></li>
+					<li><a href="movies.html">Movies</a></li>
+					<li><a href="random_video.html">Random funny video</a></li>
+					<li><a href="dc animated in order/">DC animated movies in order</a></li>
+				</ul>
+				<ul id="slide-out" class="side-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="new_tv.html">New TV Shows</a></li>
+					<li><a href="new_movies.html">New Movies</a></li>
+					<li><a href="tv.html">TV Shows</a></li>
+					<li><a href="movies.html">Movies</a></li>
+					<li><a href="random_video.html">Random funny video</a></li>
+					<li><a href="dc animated in order/">DC animated movies in order</a></li>
+				</ul>
+			</div>
+		</nav>
 			
-			<main>
-				<div class="container">
-					<video id="video" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls>
-						<p>
-							Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
-						</p>
-					</video>
-					<ol class="vjs-playlist"></ol>
-				
-					<ul class="collapsible popout" data-collapsible="accordion">
-						<!--the Simpsons-->
-						<li>
-							<div class="collapsible-header"><i class="material-icons"></i>The Simpsons</div>
-								<div class="collapsible-body grey lighten-4">
-									<ul data-collapsible="accordion">
-										<!-- Season 1-->
-										<li>
-											<div class="collapsible-header" onclick="simpsons_s1()"><i class="material-icons"></i>Season 01 </div>
-
-
-											
-
-											<a class="waves-effect waves-light btn waves-light red" href="/images/favicon.png" download>Click to download</a>
-
-
-										</li>	
-											
-										
-										<li>
-											<div class="collapsible-header" onclick="simpsons_s1()"><i class="material-icons"></i>Season 02 </div>
-
-
-											
-
-											<a class="waves-effect waves-light btn waves-light red" href="/images/favicon.png" download>Click to download</a>
-
-
-										</li>	
-
-										
-									</ul>
-								</div>	
-						</li>
-
+		<main>
+			<div class="container">
+				<video id="video" class="video-js vjs-default-skin vjs-big-play-centered" height="300" width="600" controls>
+					<p>
+						Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
+					</p>
+				</video>
+				<ol class="vjs-playlist"></ol>
+			
+				<ul class="collapsible popout" data-collapsible="accordion">
+					<!--American Dad-->
+					<li>
+						<div class="collapsible-header"><i class="material-icons"></i>American Dad</div>
+						<div class="collapsible-body grey lighten-4">
+							<ul data-collapsible="accordion">
+								<!-- Season 1-->
+								<li>
+									<div class="collapsible-header" onclick="AmericanDad_s1()"><i class="material-icons"></i>Season 01 <i class="material-icons right">play_for_work</i></div>
+								</li>	
+								<!-- Season 2 -->
+								<li>
+									<div class="collapsible-header" onclick="Materialize.toast('Sorry, no episodes here yet!', 3000)"><i class="material-icons"></i>Season 02 <i class="material-icons right" onclick="download('connor.mp4')">play_for_work</i></div>
+								</li>
+							</ul>
+						</div>	
+					</li>
+				</ul>
 			</div>
 			
 			<div class="container">
@@ -147,19 +126,6 @@
 							<a href="media/the simpsons/TheSimpsons.html" class="secondary-content">&nbsp&nbsp&nbsp&nbsp
 							<i class="material-icons">send</i></a>
 							<a  class="secondary-content"></a>
-
-							
-							
-						</div>
-						</li>
-
-						<li class="collection-item">
-						<div>American dad
-							<a href="AmericanDad.html" class="secondary-content">&nbsp&nbsp&nbsp&nbsp
-							<i class="material-icons">send</i></a>
-							<a  class="secondary-content"></a>
-						
-
 						</div>
 						</li>
 						
@@ -225,19 +191,5 @@
 				</div>
 			</div>
 		</footer>
-
-		<!-- VideoJS Player -->
-		<script src="video.js\video.js"></script>
-		<script src="video.js\global.js"></script>
-		<script src="video.js\videojs-playlist-ui.js"></script>
-		<script>
-		    // fire up the plugin
-		    var player = videojs('video');
-		    player.playlist([{
-		     name: 'Please pick a series below',
-		    }], 1);
-		    player.playlist.autoadvance(1);
-		    player.playlistUi();
-  		</script>
 	</body>
 </html>
