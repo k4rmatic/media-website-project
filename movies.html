@@ -1,36 +1,41 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Replay</title>
 		<link rel="icon" type="image/png" href="images/favicon.png">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-
-		<!--Import Google Icon Font-->
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<!--Import materialize.css-->
+		<!--Import Materialize CSS-->
+		<link href="css/material-icons.css" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+		
 		<!--Videojs Player -->
 		<link href="video.js\video-js.css" rel="stylesheet">
 		<link href="video.js\videojs-playlist-ui.vertical.css" rel="stylesheet">
-
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css">		
+		
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<!-- VideoJS Player -->
+		<script src="video.js\video.js"></script>
+		<script src="video.js\videojs-playlist.js"></script>
+		<script src="video.js\videojs-playlist-ui.js"></script>
 	</head>
 	<body>
-
-		<!--Import jQuery before materialize.js-->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<!-- <script type="text/javascript" src="js/nav.js"></script> -->
 		<script>
 			$( document ).ready( function() {
 				$(".button-collapse").sideNav();
+
+				// fire up the videojs plugin
+			    var player = videojs('video');
+			    player.playlist([{
+			     name: 'Please pick a series below',
+			    }], 1);
+			    player.playlist.autoadvance(1);
+			    player.playlistUi();
 			});
 
-			function twentytwelve_film(location) {
+			function filmSelect(location) {
+				var player = videojs('video');
 				player.playlist([{
 				      sources: [
 				        { src: location, type: 'video/mp4' },
@@ -78,1112 +83,1107 @@
 				<p>
 					Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
 				</p>
-				<source src="connor.mp4" type="video/mp4">
 			</video>
-
-
-
-
 
 				<!-- Standard System -->
 				<ul class="collection">
-					<li class="collection-item">
+					<li class="collection-item" onclick="filmSelect('http://81.111.188.191/media/movies/2%20Fast%202%20Furious.mp4')">
 					<div>2Fast2Furious
-						<a href="movies and tv/movies/2Fast2Furious.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="http://81.111.188.191/media/movies/2%20Fast%202%20Furious.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 
 					</div>
 					</li>
 
-					<li class="collection-item" onclick="twentytwelve_film('http://techslides.com/demos/sample-videos/small.mp4')">
+					<li class="collection-item" onclick="filmSelect('http://81.111.188.191/media/movies/2012.mp4')">
 					<div>2012
-						<a href="movies and tv/movies/2012.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="http://81.111.188.191/media/movies/2012.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
-					<li class="collection-item">
+					<li class="collection-item" onclick="filmSelect('http://81.111.188.191/media/movies/Avengers%20Age%20of%20Ultron.mp4')">
 					<div>Avengers Age Of Ultron
-						<a href="movies and tv/movies/Avengers Age Of Ultron.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="http://81.111.188.191/media/movies/Avengers%20Age%20of%20Ultron.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
-					<li class="collection-item">
-					<div>Awake
-						<a href="movies and tv/movies/Awake.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+					<li class="collection-item" onclick="filmSelect('http://81.111.188.191/media/movies/Awake.mp4')">
+					<div>Awake - done up to here aqib
+						<a download href="http://81.111.188.191/media/movies/Awake.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Back to the Future pt1
-						<a href="movies and tv/movies/Back to the Future pt1.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Back to the Future pt1.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Back to the Future pt2
-						<a href="movies and tv/movies/Back to the Future pt2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Back to the Future pt2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Back to the Future pt3
-						<a href="movies and tv/movies/Back to the Future pt3.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Back to the Future pt3.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Blackadder Back And Forth
-						<a href="movies and tv/movies/Blackadder Back And Forth.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Blackadder Back And Forth.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Brick Mansion
-						<a href="movies and tv/movies/Brick Mansion.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Brick Mansion.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Bruce Almighty
-						<a href="movies and tv/movies/Bruce Almighty.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Bruce Almighty.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Captain America The First 
-						<a href="Captain America The First Avenger.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="Captain America The First Avenger.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Avengers
-						<a href="movies and tv/movies/The Avengers.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Avengers.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Captain America The Winter Soldier
-						<a href="movies and tv/movies/Captain America The Winter Soldier.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Captain America The Winter Soldier.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Carrie
-						<a href="movies and tv/movies/Carrie.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Carrie.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Click
-						<a href="movies and tv/movies/Click.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Click.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Edge Of Tomorrow
-						<a href="movies and tv/movies/Edge Of Tomorrow.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Edge Of Tomorrow.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Fast 5
-						<a href="movies and tv/movies/Fast 5.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Fast 5.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Fast And Furious 4
-						<a href="movies and tv/movies/Fast And Furious 4.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Fast And Furious 4.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Fast And Furious 6
-						<a href="movies and tv/movies/Fast And Furious 6.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Fast And Furious 6.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Fat Albert
-						<a href="movies and tv/movies/Fat Albert.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Fat Albert.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Furious 7
-						<a href="movies and tv/movies/Furious 7.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Furious 7.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Grave Encounters
-						<a href="movies and tv/movies/Grave Encounters.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Grave Encounters.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Grown Ups
-						<a href="movies and tv/movies/Grown Ups.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Grown Ups.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Guardians Of The Galaxay
-						<a href="movies and tv/movies/Guardians Of The Galaxay.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Guardians Of The Galaxay.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Hancock
-						<a href="movies and tv/movies/Hancock.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Hancock.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Harry Potter And The Chamber Of Secrets
-						<a href="movies and tv/movies/Harry Potter And The Chamber Of Secrets.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Harry Potter And The Chamber Of Secrets.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Harry Potter And The Deathly Hallows pt1
-						<a href="movies and tv/movies/Harry Potter And The Deathly Hallows pt1.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Harry Potter And The Deathly Hallows pt1.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Harry Potter And The Deathly Hallows pt2
-						<a href="movies and tv/movies/Harry Potter And The Deathly Hallows pt2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Harry Potter And The Deathly Hallows pt2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Harry Potter And The Goblet Of Fire
-						<a href="movies and tv/movies/Harry Potter And The Goblet Of Fire.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Harry Potter And The Goblet Of Fire.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Harry Potter And The Half Blood Prince
-						<a href="movies and tv/movies/Harry Potter And The Half Blood Prince.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Harry Potter And The Half Blood Prince.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Harry Potter And The Order Of The Phoenix
-						<a href="movies and tv/movies/Harry Potter And The Order Of The Phoenix.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Harry Potter And The Order Of The Phoenix.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Harry Potter And The Prisoner Of Azkaban
-						<a href="movies and tv/movies/Harry Potter And The Prisoner Of Azkaban.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Harry Potter And The Prisoner Of Azkaban.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Harry Potter And The Sorcerers Stone
-						<a href="movies and tv/movies/Harry Potter And The Sorcerers Stone.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Harry Potter And The Sorcerers Stone.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Hook
-						<a href="movies and tv/movies/Hook.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Hook.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Houdini
-						<a href="movies and tv/movies/Houdini.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Houdini.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>How To Train Your Dragon 2
-						<a href="movies and tv/movies/How To Train Your Dragon 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/How To Train Your Dragon 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>I Robot
-						<a href="movies and tv/movies/Irobot.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Irobot.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Inception
-						<a href="movies and tv/movies/Inception.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Inception.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Insidious chapter 2
-						<a href="movies and tv/movies/Insidious chapter 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Insidious chapter 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Insidious Chapter 3
-						<a href="movies and tv/movies/Insidious Chapter 3.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Insidious Chapter 3.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Insidious
-						<a href="movies and tv/movies/Insidious.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Insidious.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Iron Man 2
-						<a href="movies and tv/movies/Iron Man 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Iron Man 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Iron Man 3
-						<a href="movies and tv/movies/Iron Man 3.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Iron Man 3.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Iron Man
-						<a href="movies and tv/movies/Iron Man.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Iron Man.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>John Wick
-						<a href="movies and tv/movies/John Wick.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/John Wick.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Jumper
-						<a href="movies and tv/movies/Jumper.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Jumper.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Kung Fu Panda
-						<a href="movies and tv/movies/Kung Fu Panda.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Kung Fu Panda.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Kung Fu Panda 2
-						<a href="movies and tv/movies/Kung Fu Panda 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Kung Fu Panda 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Kung Fu Panda 3
-						<a href="movies and tv/movies/Kung Fu Panda 3.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Kung Fu Panda 3.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Law Abiding Citizen 
-						<a href="movies and tv/movies/Law Abiding Citizen.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Law Abiding Citizen.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Leroy and Stitch The Movie
-						<a href="movies and tv/movies/Leroy and Stitch The Movie.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Leroy and Stitch The Movie.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Lilo and Stitch 2 - Stitch has a Glitch
-						<a href="movies and tv/movies/Lilo and Stitch 2 - Stitch has a Glitch.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Lilo and Stitch 2 - Stitch has a Glitch.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Lilo and Stitch The Movie
-						<a href="movies and tv/movies/Lilo and Stitch The Movie.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Lilo and Stitch The Movie.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Maze Runner The Scorch Trials
-						<a href="movies and tv/movies/Maze Runner The Scorch Trials.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Maze Runner The Scorch Trials.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Meet The Robinsons
-						<a href="movies and tv/movies/Meet The Robinsons.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Meet The Robinsons.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Nacho Libre
-						<a href="movies and tv/movies/Nacho Libre.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Nacho Libre.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Osmosis Jones
-						<a href="movies and tv/movies/Osmosis Jones.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Osmosis Jones.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Oz the Great and Powerful
-						<a href="movies and tv/movies/Oz the Great and Powerful.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Oz the Great and Powerful.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Peter Pan
-						<a href="movies and tv/movies/Peter Pan.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Peter Pan.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Push
-						<a href="movies and tv/movies/Push.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Push.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Richie Rich
-						<a href="movies and tv/movies/Richie Rich.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Richie Rich.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Rush Hour
-						<a href="movies and tv/movies/Rush Hour.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Rush Hour.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Rush Hour 2
-						<a href="movies and tv/movies/Rush Hour 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Rush Hour 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Rush Hour 3
-						<a href="movies and tv/movies/Rush Hour 3.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Rush Hour 3.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Sherlock Holmes
-						<a href="movies and tv/movies/Sherlock Holmes.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Sherlock Holmes.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Sherlock Holmes A Game Of Shoadows
-						<a href="movies and tv/movies/Sherlock Holmes A Game Of Shoadows.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Sherlock Holmes A Game Of Shoadows.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Shooter
-						<a href="movies and tv/movies/Shooter.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Shooter.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>SpiderMan
-						<a href="movies and tv/movies/SpiderMan.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/SpiderMan.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>SpiderMan 2
-						<a href="movies and tv/movies/SpiderMan 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/SpiderMan 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>SpiderMan 3
-						<a href="movies and tv/movies/SpiderMan 3.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/SpiderMan 3.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Stitch! The Movie
-						<a href="movies and tv/movies/Stitch! The Movie.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Stitch! The Movie.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Terminator Genisys
-						<a href="movies and tv/movies/Terminator Genisys.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Terminator Genisys.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Amazing SpiderMan 2
-						<a href="movies and tv/movies/The Amazing SpiderMan 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Amazing SpiderMan 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The ButterFly Effect
-						<a href="movies and tv/movies/The ButterFly Effect.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The ButterFly Effect.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Da Vinci Code
-						<a href="movies and tv/movies/The Da Vinci Code.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Da Vinci Code.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Darkest Hour
-						<a href="movies and tv/movies/The Darkest Hour.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Darkest Hour.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Emperors New Groove 
-						<a href="movies and tv/movies/The Emperors New Groove.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Emperors New Groove.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Equalizer
-						<a href="movies and tv/movies/The Equalizer.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Equalizer.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Fast And The Furious
-						<a href="movies and tv/movies/The Fast And The Furious.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Fast And The Furious.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Fast And The Furious Tokyo Drift
-						<a href="movies and tv/movies/The Fast And The Furious Tokyo Drift.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Fast And The Furious Tokyo Drift.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Incredible Hulk
-						<a href="movies and tv/movies/The Incredible Hulk.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Incredible Hulk.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Incredibles
-						<a href="movies and tv/movies/The Incredibles.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Incredibles.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Maze Runner
-						<a href="movies and tv/movies/The Maze Runner.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Maze Runner.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Pursuit Of Happyness
-						<a href="movies and tv/movies/The Pursuit Of Happyness.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Pursuit Of Happyness.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Simpsons Movie
-						<a href="movies and tv/movies/The Simpsons Movie.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Simpsons Movie.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The SpongeBob SquarePants Movie
-						<a href="movies and tv/movies/The SpongeBob SquarePants Movie.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The SpongeBob SquarePants Movie.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Wolverine
-						<a href="movies and tv/movies/The Wolverine.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Wolverine.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Thor The Dark World
-						<a href="movies and tv/movies/Thor The Dark World.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Thor The Dark World.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Thor
-						<a href="movies and tv/movies/Thor.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Thor.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>X Men 2
-						<a href="movies and tv/movies/X Men 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/X Men 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>X Men Days Of Future Past
-						<a href="movies and tv/movies/X Men Days Of Future Past.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/X Men Days Of Future Past.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>X Men First Class
-						<a href="movies and tv/movies/X Men First Class.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/X Men First Class.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>X Men Origins Wolverine
-						<a href="movies and tv/movies/X Men Origins Wolverine.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/X Men Origins Wolverine.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>X Men The Last Stand
-						<a href="movies and tv/movies/X Men The Last Stand.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/X Men The Last Stand.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>X Men
-						<a href="movies and tv/movies/X Men.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/X Men.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Zoom
-						<a href="movies and tv/movies/Zoom.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Zoom.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Conjuring
-						<a href="movies and tv/movies/The Conjuring.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Conjuring.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Annabelle
-						<a href="movies and tv/movies/Annabelle.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Annabelle.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Ant Man
-						<a href="movies and tv/movies/Ant Man.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Ant Man.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Son of Batman
-						<a href="movies and tv/movies/Son of Batman.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Son of Batman.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Batman Under The Red Hood
-						<a href="movies and tv/movies/Batman Under The Red Hood.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Batman Under The Red Hood.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Batman Bad Blood
-						<a href="movies and tv/movies/Batman Bad Blood.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Batman Bad Blood.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Batman vs Robin
-						<a href="movies and tv/movies/Batman vs Robin.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Batman vs Robin.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Man Of Steel
-						<a href="movies and tv/movies/Man Of Steel.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Man Of Steel.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Rio 2
-						<a href="movies and tv/movies/Rio 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Rio 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Justice League The Flashpoint Paradox
-						<a href="movies and tv/movies/Justice League The Flashpoint Paradox (2013).mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Justice League The Flashpoint Paradox (2013).mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Justice League War
-						<a href="movies and tv/movies/Justice League War (2014).mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Justice League War (2014).mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Hardcore Henry
-						<a href="movies and tv/movies/Hardcore Henry.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Hardcore Henry.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Terminator
-						<a href="movies and tv/movies/The Terminator.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Terminator.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Terminator Salvation
-						<a href="movies and tv/movies/Terminator Salvation.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Terminator Salvation.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Terminator 3 Rise of The Machines
-						<a href="movies and tv/movies/Terminator 3 Rise of The Machines.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Terminator 3 Rise of The Machines.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Terminator 2 Judgement Day
-						<a href="movies and tv/movies/Terminator 2 Judgement Day.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Terminator 2 Judgement Day.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Hitman Agent 47
-						<a href="movies and tv/movies/Hitman Agent 47.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Hitman Agent 47.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Pirates of the Caribbean On Stranger Tides
-						<a href="movies and tv/movies/Pirates.of the Caribbean On Stranger Tides.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Pirates.of the Caribbean On Stranger Tides.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Pirates of the Caribbean At Worlds End
-						<a href="movies and tv/movies/Pirates of the Caribbean At Worlds End.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Pirates of the Caribbean At Worlds End.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Pirates of the Caribbean Curse of the Black Pearl
-						<a href="movies and tv/movies/Pirates of the Caribbean Curse of the Black Pearl.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Pirates of the Caribbean Curse of the Black Pearl.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Pirates of the Caribbean Dead Man's Chest
-						<a href="movies and tv/movies/Pirates of the Caribbean Dead Man's Chest.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Pirates of the Caribbean Dead Man's Chest.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Mr. Bean's Holiday
-						<a href="movies and tv/movies/Mr. Bean's Holiday.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Mr. Bean's Holiday.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Martian
-						<a href="movies and tv/movies/The Martian.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Martian.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Justice League Throne of Atlantis
-						<a href="movies and tv/movies/Justice League Throne of Atlantis.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Justice League Throne of Atlantis.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Ice Age
-						<a href="movies and tv/movies/Ice Age.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Ice Age.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Star Wars Episode VII The Force Awakens
-						<a href="movies and tv/movies/Star Wars Episode VII The Force Awakens.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Star Wars Episode VII The Force Awakens.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Ice Age The Meltdown
-						<a href="movies and tv/movies/Ice Age The Meltdown.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Ice Age The Meltdown.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Justice League Doom
-						<a href=movies and tv/movies/Justice League Doom.mp4"" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href=movies and tv/movies/Justice League Doom.mp4"" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Batman The Dark Knight Returns Part 1
-						<a href="movies and tv/movies/Batman The Dark Knight Returns Part 1.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Batman The Dark Knight Returns Part 1.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Batman The Dark Knight Returns Part 2
-						<a href="movies and tv/movies/Batman The Dark Knight Returns Part 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Batman The Dark Knight Returns Part 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Liar Liar
-						<a href="movies and tv/movies/Liar Liar.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Liar Liar.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>21 Jump Street
-						<a href="movies and tv/movies/21 Jump Street.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/21 Jump Street.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>22 Jump Street
-						<a href="movies and tv/movies/22 Jump Street.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/22 Jump Street.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Men In Black
-						<a href="movies and tv/movies/Men In Black.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Men In Black.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Men In Black 2
-						<a href="movies and tv/movies/Men In Black 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Men In Black 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Men In Black 3
-						<a href="movies and tv/movies/Men In Black 3.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Men In Black 3.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Pan
-						<a href="movies and tv/movies/pan.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/pan.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Cat in the Hat
-						<a href="movies and tv/movies/The Cat in the Hat.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Cat in the Hat.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Drillbit Taylor
-						<a href="movies and tv/movies/Drillbit Taylor.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Drillbit Taylor.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 					
 					<li class="collection-item">
 					<div>Madagascar
-						<a href="movies and tv/movies/Madagascar.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Madagascar.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Madagascar Escape 2 Africa
-						<a href="movies and tv/movies/Madagascar Escape 2 Africa.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Madagascar Escape 2 Africa.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Madagascar 3 Europes Most Wanted
-						<a href="movies and tv/movies/Madagascar 3 Europes Most Wanted.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Madagascar 3 Europes Most Wanted.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Over the Hedge
-						<a href="movies and tv/movies/Over the Hedge.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Over the Hedge.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Room
-						<a href="movies and tv/movies/Room.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Room.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Space Jam
-						<a href="movies and tv/movies/Space Jam.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Space Jam.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>London Has Fallen
-						<a href="movies and tv/movies/London Has Fallen .mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/London Has Fallen .mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Hotel Transylvania
-						<a href="movies and tv/movies/Hotel Transylvania.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Hotel Transylvania.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Hotel Transylvania 2
-						<a href="movies and tv/movies/Hotel Transylvania 2.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Hotel Transylvania 2.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Croods
-						<a href="movies and tv/movies/The Croods.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Croods.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Frankenstein
-						<a href="movies and tv/movies/Frankenstein.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Frankenstein.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The World's End
-						<a href="movies and tv/movies/The World's End.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The World's End.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Great Gatsby
-						<a href="movies and tv/movies/The Great Gatsby.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Great Gatsby.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Lego Movie
-						<a href="movies and tv/movies/The Lego Movie.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Lego Movie.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Creed
-						<a href="movies and tv/movies/Creed.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Creed.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Transformers
-						<a href="movies and tv/movies/Transformers.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Transformers.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Transformers 2 Revenge Of The Fallen
-						<a href="movies and tv/movies/Transformers Revenge Of The Fallen.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Transformers Revenge Of The Fallen.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Transformer 3 Dark Of The Moon
-						<a href="movies and tv/movies/Transformer 3 Dark Of The Moon.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Transformer 3 Dark Of The Moon.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Transformers 4 Age Of Extinction
-						<a href="movies and tv/movies/Transformers Age Of Extinction.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Transformers Age Of Extinction.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Dope
-						<a href="movies and tv/movies/Dope.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Dope.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>Straight Outta Compton
-						<a href="movies and tv/movies/Straight Outta Compton.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/Straight Outta Compton.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
 					<li class="collection-item">
 					<div>The Nice Guys
-						<a href="movies and tv/movies/The Nice Guys.mp4" class="secondary-content">
-						<i class="material-icons">send</i></a>
+						<a download href="movies and tv/movies/The Nice Guys.mp4" class="secondary-content">
+						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
 
@@ -1198,10 +1198,5 @@
 				</div>
 			</div>
 		</footer>
-
-		<!-- VideoJS Player -->
-		<script src="video.js\video.js"></script>
-		<script src="video.js\global.js"></script>
-		<script>var player = videojs('video');</script>
 	</body>
 </html>

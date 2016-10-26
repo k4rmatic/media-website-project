@@ -3,29 +3,53 @@
 
 </style>
   <head>
-	<title>Replay</title>
-	<link rel="icon" type="image/png" href="images/favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-	<!--Import Google Icon Font-->
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Replay</title>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<!--Import Materialize CSS-->
+		<link href="css/material-icons.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		
+		<!--Videojs Player -->
+		<link href="video.js\video-js.css" rel="stylesheet">
+		<link href="video.js\videojs-playlist-ui.vertical.css" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css">		
+		
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<!-- VideoJS Player -->
+		<script src="video.js\video.js"></script>
+		<script src="video.js\videojs-playlist.js"></script>
+		<script src="video.js\videojs-playlist-ui.js"></script>
   </head>
   <body>
-
-	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<!-- <script type="text/javascript" src="js/nav.js"></script> -->
 	<script>
 		$( document ).ready( function() {
 			$(".button-collapse").sideNav();
+
+			// fire up the videojs plugin
+		    var player = videojs('video');
+		    player.playlist([{
+		     name: 'Please pick a series below',
+		    }], 1);
+		    player.playlist.autoadvance(1);
+		    player.playlistUi();
 		});
+
+		function filmSelect(location) {
+			var player = videojs('video');
+			player.playlist([{
+			      sources: [
+			        { src: location, type: 'video/mp4' },
+			      ],
+			      thumbnail: false
+			    }], 1);
+
+			//Loads the video into the player ready to play
+			player.playlist.first();
+			Materialize.toast('Movie Loaded, Please press play at the top of the page!', 3000)
+		}
 	</script>
 
 	<nav class="red">
@@ -54,29 +78,25 @@
 	</nav>
 	
 	<main>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 		<div class="container">
+			<!-- New Player system -->
+			<video id="video" class="video-js vjs-default-skin vjs-big-play-centered" style="width: 100%; margin-bottom: 10px;" height="300" width="600" controls>
+				<p>
+					Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
+				</p>
+			</video>
+
 			<ul class="collection">
-				<li class="collection-item">
-				<div>Captain America Civil War
-					<a href="movies and tv/new movies/CA Civil War.mp4" class="secondary-content">
+				<li class="collection-item" onclick="filmSelect('http://81.111.188.191/media/new_movies/X-Men%20Apocalypse.mp4')">
+				<div>X-MEN:Apocalypse
+					<a href="http://81.111.188.191/media/new_movies/X-Men%20Apocalypse.mp4" class="secondary-content">
 					<i class="material-icons">send</i></a>
 				</div>
 				</li>
 
 				<li class="collection-item">
-				<div>X-MEN:Apocalypse
-					<a href="movies and tv/new movies/X-Men Apocalypse.mp4" class="secondary-content">
+				<div>Captain America Civil War
+					<a href="movies and tv/new movies/CA Civil War.mp4" class="secondary-content">
 					<i class="material-icons">send</i></a>
 				</div>
 				</li>
