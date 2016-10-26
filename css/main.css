@@ -29,4 +29,5 @@ a{
 .vjs-playlist {
 	width: 39%;
 	height: 45vh;
+	overflow-x: hidden;
 }
