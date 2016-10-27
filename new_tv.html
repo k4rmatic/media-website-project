@@ -20,131 +20,12 @@
 		<script src="video.js\video.js"></script>
 		<script src="video.js\videojs-playlist.js"></script>
 		<script src="video.js\videojs-playlist-ui.js"></script>
+		<script src="js\new_tv_shows.js"></script>
 	</head>
 	<body>
 		<script>
 			function download(link) {
 				window.location = link;
-			}
-		</script>
-
-		<!-- American Dad -->
-		<script>
-			//American Dad Season 1
-			function AmericanDad_s1() {
-				var player = videojs('video');
-			    player.playlist([
-			   		{
-			      	name: 'Episode 1',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season01/S01E01.mp4', type: 'video/mp4' }]
-					},
-			    	{
-			      	name: 'Episode 2',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season01/S01E02.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 3',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season01/S01E03.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 4',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season01/S01E04.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 5',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season01/S01E05.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 6',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season01/S01E06.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 7',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season01/S01E07.mp4', type: 'video/mp4' }]
-			    	}
-			    ]);
-
-				//Loads the video into the player ready to play
-				player.playlist.first();
-				player.playlist.autoadvance(0);
-				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
-				return;
-			}
-			//American Dad Season 2
-			function AmericanDad_s2() {
-				var player = videojs('video');
-			    player.playlist([
-			   		{
-			      	name: 'Episode 1',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E01.mp4', type: 'video/mp4' }]
-					},
-			    	{
-			      	name: 'Episode 2',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E02.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 3',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E03.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 4',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E04.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 5',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E05.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 6',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E06.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 7',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E07.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 8',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E08.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 9',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E09.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 10',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E10.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 11',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E11.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 12',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E12.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 13',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E13.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 14',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E14.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 15',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E15.mp4', type: 'video/mp4' }]
-			    	},
-			    	{
-			      	name: 'Episode 16',
-			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E16.mp4', type: 'video/mp4' }]
-			    	}
-			    ]);
-
-				//Loads the video into the player ready to play
-				player.playlist.first();
-				player.playlist.autoadvance(0);
-				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
-				return;
 			}
 		</script>
 		<script>
@@ -204,12 +85,39 @@
 							<ul data-collapsible="accordion">
 								<!-- Season 1-->
 								<li>
-									<div class="collapsible-header" onclick="AmericanDad_s1()"><i class="material-icons"></i>Season 01 </div>
+									<div class="collapsible-header" onclick="AmericanDad_s1()"><i class="material-icons"></i>Season 1 </div>
 								</li>	
 								<!-- Season 2 -->
 								<li>
-									<div class="collapsible-header" onclick="AmericanDad_s2()"><i class="material-icons"></i>Season 02 </div>
-								</li>
+									<div class="collapsible-header" onclick="AmericanDad_s2()"><i class="material-icons"></i>Season 2 </div>
+								</li>	
+								<!-- Season 3 -->
+								<li>
+									<div class="collapsible-header" onclick="AmericanDad_s3()"><i class="material-icons"></i>Season 3 </div>
+								</li>	
+								<!-- Season 4 -->
+								<li>
+									<div class="collapsible-header" onclick="AmericanDad_s4()"><i class="material-icons"></i>Season 4 </div>
+								</li>	
+								<!-- Season 5 -->
+								<li>
+									<div class="collapsible-header" onclick="AmericanDad_s5()"><i class="material-icons"></i>Season 5 </div>
+								</li>	
+								<!-- Season 6 -->
+								<li>
+									<div class="collapsible-header" onclick="AmericanDad_s6()"><i class="material-icons"></i>Season 6 </div>
+								</li>	
+								<!-- Season 7 -->
+								<li>
+									<div class="collapsible-header" onclick="AmericanDad_s7()"><i class="material-icons"></i>Season 7 </div>
+								</li>	
+								<!-- Season 8 -->
+								<li>
+									<div class="collapsible-header" onclick="AmericanDad_s8()"><i class="material-icons"></i>Season 8 </div>
+								</li>	
+								<!-- Season 9 -->
+								<li>
+									<div class="collapsible-header" onclick="AmericanDad_s9()"><i class="material-icons"></i>Season 9 </div>
 								</li>
 							</ul>
 						</div>	
