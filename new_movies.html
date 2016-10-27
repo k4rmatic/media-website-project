@@ -22,6 +22,7 @@
 		<script src="video.js\video.js"></script>
 		<script src="video.js\videojs-playlist.js"></script>
 		<script src="video.js\videojs-playlist-ui.js"></script>
+		<script src="js\new_movies_setters.js"></script>
   </head>
   <body>
 	<script>
@@ -38,6 +39,7 @@
 		});
 
 		function filmSelect(location) {
+			playlist_disable();
 			var player = videojs('video');
 			player.playlist([{
 			      sources: [
@@ -49,6 +51,16 @@
 			//Loads the video into the player ready to play
 			player.playlist.first();
 			Materialize.toast('Movie Loaded, Please press play at the top of the page!', 3000)
+		}
+
+		function playlist_enable()  {
+			document.getElementById("playlist_element").style.display = "block";
+			document.getElementById("video").style.width = "61%";
+		}
+
+		function playlist_disable() {
+			document.getElementById("playlist_element").style.display = "none";
+			document.getElementById("video").style.width = "100%";
 		}
 	</script>
 
@@ -85,6 +97,7 @@
 					Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
 				</p>
 			</video>
+			<ol id="playlist_element" style="display: none;" class="vjs-playlist"></ol>
 
 			<ul class="collection">
 
@@ -151,27 +164,10 @@
 				</div>
 				</li>
 
-				<li class="collection-item" onclick="filmSelect('http://81.111.188.191/media/new_movies/The Purge.mp4')">
+				<li class="collection-item" onclick="ThePurge()">
 				<div>The Purge
-					<a download href="http://81.111.188.191/media/new_movies/The Purge.mp4" class="secondary-content">
-					<i class="material-icons">play_for_work</i></a>
 				</div>
-				</li>
-
-				<li class="collection-item" onclick="filmSelect('http://81.111.188.191/media/new_movies/The Purge Anarchy.mp4')">
-				<div>The Purge Anarchy
-					<a download href="http://81.111.188.191/media/new_movies/The Purge Anarchy.mp4" class="secondary-content">
-					<i class="material-icons">play_for_work</i></a>
-				</div>
-				</li>
-
-				<li class="collection-item" onclick="filmSelect('http://81.111.188.191/media/new_movies/The Purge Election Year.mp4')">
-				<div>The Purge Election Year
-					<a download href="http://81.111.188.191/media/new_movies/The Purge Election Year.mp4" class="secondary-content">
-					<i class="material-icons">play_for_work</i></a>
-				</div>
-				</li>
-				
+				</li>				
 			</ul>
 		</div>
 	</div>	
