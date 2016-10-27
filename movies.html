@@ -19,33 +19,45 @@
 		<script src="video.js\video.js"></script>
 		<script src="video.js\videojs-playlist.js"></script>
 		<script src="video.js\videojs-playlist-ui.js"></script>
+		<script src="js\movies_setters.js"></script>
 	</head>
 	<body>
 		<script>
-			$( document ).ready( function() {
-				$(".button-collapse").sideNav();
+			$(document).ready(function () {
+			    $(".button-collapse").sideNav();
 
-				// fire up the videojs plugin
-			    var player = videojs('video');
+			    // fire up the videojs plugin
+			    var player = videojs("video");
 			    player.playlist([{
-			     name: 'Please pick a series below',
+			        name: "Please pick a series below"
 			    }], 1);
 			    player.playlist.autoadvance(1);
 			    player.playlistUi();
 			});
 
 			function filmSelect(location) {
-				var player = videojs('video');
-				player.playlist([{
-				      sources: [
-				        { src: location, type: 'video/mp4' },
-				      ],
-				      thumbnail: false
-				    }], 1);
+				playlist_disable();
+                var player = videojs('video');
+                player.playlist([{
+                      sources: [
+                        { src: location, type: 'video/mp4' },
+                      ],
+                      thumbnail: false
+                    }], 1);
 
-				//Loads the video into the player ready to play
-				player.playlist.first();
-				Materialize.toast('Movie Loaded, Please press play at the top of the page!', 3000)
+                //Loads the video into the player ready to play
+                player.playlist.first();
+                Materialize.toast('Movie Loaded, Please press play at the top of the page!', 3000)
+            }
+
+			function playlist_enable()  {
+				document.getElementById("playlist_element").style.display = "block";
+				document.getElementById("video").style.width = "61%";
+			}
+
+			function playlist_disable() {
+				document.getElementById("playlist_element").style.display = "none";
+				document.getElementById("video").style.width = "100%";
 			}
 		</script>
 
@@ -84,12 +96,13 @@
 					Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.
 				</p>
 			</video>
+			<ol id="playlist_element" style="display: none;" class="vjs-playlist"></ol>
 
 				<!-- Standard System -->
 				<ul class="collection">
-					<li class="collection-item" onclick="filmSelect('http://81.111.188.191/media/movies/2%20Fast%202%20Furious.mp4')">
+					<li class="collection-item" onclick="FastAndFurious()">
 					<div>2Fast2Furious
-						<a download href="http://81.111.188.191/media/movies/2%20Fast%202%20Furious.mp4" class="secondary-content">
+						<a download href="http://81.111.188.191/media/movies/2Fast2Furious.mp4" class="secondary-content">
 						<i class="material-icons">play_for_work</i></a>
 					</div>
 					</li>
