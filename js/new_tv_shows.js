@@ -1,9 +1,10 @@
-//American Dad Season 1
-function AmericanDad_s1() {
+//american dad
+	//American Dad Season 1
+	function AmericanDad_s1() {
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Episode 1',
+			      	name: 'Season 01 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season01/S01E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -37,13 +38,13 @@ function AmericanDad_s1() {
 				player.playlist.autoadvance(0);
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
-}
-//American Dad Season 2
-function AmericanDad_s2() {
+	}
+	//American Dad Season 2
+	function AmericanDad_s2() {
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Episode 1',
+			      	name: 'Season 2 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season02/S02E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -113,13 +114,13 @@ function AmericanDad_s2() {
 				player.playlist.autoadvance(0);
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
-}
-//American Dad Season 3
-function AmericanDad_s3() {
+	}
+	//American Dad Season 3
+	function AmericanDad_s3() {
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Episode 1',
+			      	name: 'Season 3 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season03/S03E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -201,13 +202,13 @@ function AmericanDad_s3() {
 				player.playlist.autoadvance(0);
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
-}
-//American Dad Season 4
-function AmericanDad_s4() {
+	}
+	//American Dad Season 4
+	function AmericanDad_s4() {
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Episode 1',
+			      	name: 'Season 4 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season04/S04E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -277,13 +278,13 @@ function AmericanDad_s4() {
 				player.playlist.autoadvance(0);
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
-}
-//American Dad Season 5
-function AmericanDad_s5() {
+	}
+	//American Dad Season 5
+	function AmericanDad_s5() {
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Episode 1',
+			      	name: 'Season 5 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season05/S05E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -369,13 +370,13 @@ function AmericanDad_s5() {
 				player.playlist.autoadvance(0);
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
-}
-//American Dad Season 6
-function AmericanDad_s6() {
+	}
+	//American Dad Season 6
+	function AmericanDad_s6() {
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Episode 1',
+			      	name: 'Season 6 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season06/S06E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -453,13 +454,13 @@ function AmericanDad_s6() {
 				player.playlist.autoadvance(0);
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
-}
-//American Dad Season 7
-function AmericanDad_s7() {
+	}
+	//American Dad Season 7
+	function AmericanDad_s7() {
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Episode 1',
+			      	name: 'Season 7 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season07/S07E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -541,13 +542,13 @@ function AmericanDad_s7() {
 				player.playlist.autoadvance(0);
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
-}
-//American Dad Season 8
-function AmericanDad_s8() {
+	}
+	//American Dad Season 8
+	function AmericanDad_s8() {
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Episode 1',
+			      	name: 'Season 8 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season08/S08E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -625,13 +626,13 @@ function AmericanDad_s8() {
 				player.playlist.autoadvance(0);
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
-}
-//American Dad Season 9
-function AmericanDad_s9() {
+	}
+	//American Dad Season 9
+	function AmericanDad_s9() {
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Episode 1',
+			      	name: 'Season 9 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season09/S09E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -713,4 +714,4 @@ function AmericanDad_s9() {
 				player.playlist.autoadvance(0);
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
-}
+	}

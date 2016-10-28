@@ -1,3 +1,4 @@
+//the purge
 function ThePurge() {
     playlist_enable();
     var player = videojs("video");
