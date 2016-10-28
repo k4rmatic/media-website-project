@@ -4,7 +4,7 @@
 				var player = videojs('video');
 			    player.playlist([
 			   		{
-			      	name: 'Season 01 - Episode 1',
+			      	name: 'Season 1 - Episode 1',
 			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season01/S01E01.mp4', type: 'video/mp4' }]
 					},
 			    	{
@@ -715,3 +715,293 @@
 				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
 				return;
 	}
+	//American Dad Season 10
+	function AmericanDad_s10() {
+				var player = videojs('video');
+			    player.playlist([
+			   		{
+			      	name: 'Season 10 - Episode 1',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E01.mp4', type: 'video/mp4' }]
+					},
+			    	{
+			      	name: 'Episode 2',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E02.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 3',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E03.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 4',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E04.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 5',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E05.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 6',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E06.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 7',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E07.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 8',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E08.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 9',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E09.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 10',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E10.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 11',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E11.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 12',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E12.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 13',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E13.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 14',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E14.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 15',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E15.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 16',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E16.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 17',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E17.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 18',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E18.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 19',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E19.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 20',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season10/S10E20.mp4', type: 'video/mp4' }]
+			    	}
+			    ]);
+
+				//Loads the video into the player ready to play
+				player.playlist.first();
+				player.playlist.autoadvance(0);
+				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
+				return;
+	}
+	//American Dad Season 11
+	function AmericanDad_s11() {
+				var player = videojs('video');
+			    player.playlist([
+			   		{
+			      	name: 'Season 11 - Episode 1',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season11/S11E01.mp4', type: 'video/mp4' }]
+					},
+			    	{
+			      	name: 'Episode 2',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season11/S11E02.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 3',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season11/S11E03.mp4', type: 'video/mp4' }]
+			    	}
+			    ]);
+
+				//Loads the video into the player ready to play
+				player.playlist.first();
+				player.playlist.autoadvance(0);
+				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
+				return;
+	}
+	//American Dad Season 12
+	function AmericanDad_s12() {
+				var player = videojs('video');
+			    player.playlist([
+			   		{
+			      	name: 'Season 12 - Episode 1',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E01.mp4', type: 'video/mp4' }]
+					},
+			    	{
+			      	name: 'Episode 2',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E02.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 3',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E03.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 4',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E04.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 5',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E05.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 6',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E06.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 7',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E07.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 8',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E08.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 9',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E09.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 10',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E10.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 11',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E11.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 12',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E12.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 13',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E13.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 14',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E14.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 15',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season12/S12E15.mp4', type: 'video/mp4' }]
+			    	}
+			    ]);
+
+				//Loads the video into the player ready to play
+				player.playlist.first();
+				player.playlist.autoadvance(0);
+				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
+				return;
+	}
+	//American Dad Season 13
+	function AmericanDad_s13() {
+				var player = videojs('video');
+			    player.playlist([
+			   		{
+			      	name: 'Season 13 - Episode 1',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E01.mp4', type: 'video/mp4' }]
+					},
+			    	{
+			      	name: 'Episode 2',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E02.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 3',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E03.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 4',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E04.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 5',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E05.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 6',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E06.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 7',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E07.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 8',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E08.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 9',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E09.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 10',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E10.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 11',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E11.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 12',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E12.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 13',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E13.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 14',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E14.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 15',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E15.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 16',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E16.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 17',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E17.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 18',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E18.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 19',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E19.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 20',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E20.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 21',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E21.mp4', type: 'video/mp4' }]
+			    	},
+			    	{
+			      	name: 'Episode 22',
+			      	sources: [{ src: 'http://81.111.188.191/media/new_tv_shows/AmericanDad/Season13/S13E22.mp4', type: 'video/mp4' }]
+			    	}
+			    ]);
+
+				//Loads the video into the player ready to play
+				player.playlist.first();
+				player.playlist.autoadvance(0);
+				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
+				return;
+	}
+
+
