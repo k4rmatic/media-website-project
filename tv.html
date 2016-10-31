@@ -19,6 +19,7 @@
 		<script src="video.js\video.js"></script>
 		<script src="video.js\videojs-playlist.js"></script>
 		<script src="video.js\videojs-playlist-ui.js"></script>
+		<script src="js\tv_shows.js"></script>
   </head>
   <body>
 	<script>
@@ -34,30 +35,6 @@
 		    player.playlistUi();
 		});
 	</script>
-
-	<!-- American Dragon -->
-		<script>
-			//American Dragon Season 1
-			function americanDragon_s1() {
-				var player = videojs('video');
-			    player.playlist([
-			   		{
-			      	name: 'Episode 1',
-			      	sources: [{ src: 'http://81.111.188.191/media/movies/2012.mp4', type: 'video/mp4' }]
-					},
-			    	{
-			      	name: 'Episode 2',
-			      	sources: [{ src: 'http://media.w3.org/2010/05/sintel/trailer.mp4', type: 'video/mp4' }]
-			    	}
-			    ]);
-
-				//Loads the video into the player ready to play
-				player.playlist.first();
-				player.playlist.autoadvance(0);
-				Materialize.toast('Playlist Loaded, Please press play at the top of the page!', 3000)
-				return;
-			}
-		</script>
 
 	<nav class="red">
 		<div class="nav-wrapper">
@@ -100,11 +77,11 @@
 						<ul data-collapsible="accordion">
 							<!-- Season 1-->
 							<li>
-								<div class="collapsible-header" onclick="americanDragon_s1()"><i class="material-icons"></i>Season 01 <i class="material-icons right">play_for_work</i></div>
+								<div class="collapsible-header" onclick="AmericanDragon_s1()"><i class="material-icons"></i>Season 01 <i class="material-icons right">play_for_work</i></div>
 							</li>	
-							<!-- Season 2 -->
+							<!-- Season 2-->
 							<li>
-								<div class="collapsible-header" onclick="Materialize.toast('Sorry, no episodes here yet!', 3000)"><i class="material-icons"></i>Season 02 <i class="material-icons right" onclick="download('connor.mp4')">play_for_work</i></div>
+								<div class="collapsible-header" onclick="AmericanDragon_s2()"><i class="material-icons"></i>Season 02 <i class="material-icons right">play_for_work</i></div>
 							</li>
 						</ul>
 					</div>	
